@@ -1,0 +1,31 @@
+GET http://localhost:8080/events
+###
+
+
+POST http://localhost:8080/events
+authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InNlcmthbnNveTk0QGdtYWlsLmNvbSIsImV4cCI6MTcwODk1MjY2NSwidXNlcklkIjowfQ.CLxvPH75If9onujUKwIX31hJoEq3d3E0Lca2IbhpqcU
+
+{
+	"name"   :   "test"
+}
+
+###
+
+GET http://localhost:8080/events/99
+
+###
+
+POST http://localhost:8080/signup
+
+{
+	"email"   :   "serkansoy94@gmail.com",
+	"password": "12345serkansoy"
+}
+###
+
+POST http://localhost:8080/login
+
+{
+	"email"   :   "serkansoy@gmail.com",
+	"password": "12345serkansoy"
+}
